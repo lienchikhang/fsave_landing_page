@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/Carousel.css";
 import { carousel } from "../constants";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/Open.css";
 import { openAll } from "../constants";
 import openImg from "../assets/open1.png";
