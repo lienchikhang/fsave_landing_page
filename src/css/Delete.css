@@ -1,0 +1,57 @@
+.delete {
+    @apply w-[90%] mx-auto py-[100px] grid grid-cols-6 lg:grid-cols-12 lg:gap-20;
+}
+
+.delete .delete__left {
+    @apply hidden lg:col-span-3 lg:block;
+}
+
+.delete__mid {
+    @apply col-span-6 mb-8 lg:mb-0;
+}
+
+.delete__mid h2 {
+    @apply text-[28px] mb-4 md:text-[36px] md:mb-6 font-bold lg:mb-8 lg:text-[42px];
+}
+
+.delete__mid p {
+    @apply text-[14px] md:text-base mb-4 lg:text-xl;
+    color: #8b949e;
+
+    &.special {
+        @apply text-end;
+    }
+}
+
+.delete__mid .delete__magic {
+    @apply flex items-center justify-center;
+}
+
+.delete__magic p {
+    @apply mx-2 text-3xl uppercase;
+    @apply delete__strong;
+
+    &:nth-child(2) {
+        @apply lowercase text-xl mb-4;
+        color: #8b949e;
+    }
+}
+
+.delete .delete__right {
+    @apply col-span-6 lg:col-span-3 h-[400px] lg:h-[600px] relative;
+}
+
+
+.delete__right .deleteImg {
+    @apply w-full h-[100%] lg:h-[78%] absolute rounded-2xl;
+
+}
+
+.delete__strong {
+    @apply font-medium;
+    color: rgb(255, 170, 51);
+}
+
+.button.btnDelete {
+    @apply mt-8 mx-auto block;
+}

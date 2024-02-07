@@ -1,0 +1,24 @@
+.setting {
+    @apply w-[90%] mx-auto py-[80px] pb-[100px] relative;
+}
+
+.setting h2 {
+    @apply text-xl font-semibold text-center mb-8;
+}
+
+.setting video {
+    @apply w-full rounded-2xl object-contain relative z-20;
+}
+
+.setting .img {
+    @apply absolute;
+
+    &.i0 {
+        @apply h-[200px] top-60 z-0 sm:-left-4 sm:h-[200px] md:-left-8 md:top-44 md:h-[400px] lg:-left-12 lg:top-1/2 lg:h-[600px];
+        transform: translateY(-10%);
+    }
+
+    &.i1 {
+        @apply h-[200px] top-36 -right-4 z-0 md:-right-10 sm:-right-4 sm:h-[200px] md:top-44 md:h-[300px] lg:-right-12;
+    }
+}

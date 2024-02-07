@@ -1,0 +1,50 @@
+.open {
+    @apply w-[90%] mx-auto py-[100px] grid grid-cols-6 lg:grid-cols-12 lg:gap-20;
+}
+
+.open .open__left {
+    @apply mb-7 col-span-6 lg:mb-0;
+}
+
+.open__left h2 {
+    @apply text-[28px] mb-4 md:text-[36px] md:mb-6 font-bold lg:mb-8 lg:text-[42px];
+}
+
+.open__left p {
+    @apply text-[14px] md:text-base mb-4 lg:text-xl;
+    color: #8b949e;
+}
+
+.open__left .open__magic {
+    @apply flex items-center;
+}
+
+.open__magic p {
+    @apply mx-2 text-3xl uppercase;
+    @apply open__strong;
+
+    &:nth-child(2) {
+        @apply lowercase text-xl mb-4;
+        color: #8b949e;
+    }
+}
+
+.open .open__right {
+    @apply h-[400px] col-span-6 lg:h-[600px] relative;
+}
+
+
+.open__right .openImg {
+    @apply w-[70%] absolute rounded-2xl lg:w-[78%] lg:h-[58%];
+
+}
+
+
+.open__strong {
+    @apply font-medium;
+    color: rgb(255, 170, 51);
+}
+
+.button.btnOpen {
+    @apply mt-8;
+}

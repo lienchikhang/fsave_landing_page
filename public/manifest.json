@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "name_extension",
+    "version": "1.1",
+    "description": "A simple way to save an url or moreover urls",
+    "permissions": ["activeTab", "storage", "tabs", "cookies"],
+    "action": {
+      "default_icon": "extension_icon",
+      "default_popup": "index.html"
+    },
+    "icons": {
+      "48": "extension_icon"
+    },
+    "host_permissions": ["<all_urls>"]
+}

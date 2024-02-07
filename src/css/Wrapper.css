@@ -1,0 +1,4 @@
+.wrapper {
+    background-color: #0d1018;
+    @apply text-white;
+}

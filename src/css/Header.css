@@ -1,0 +1,32 @@
+.header {
+    @apply flex justify-between items-center w-[90%] mx-auto py-8;
+}
+
+/*header__logo*/
+
+.header__logo {
+    @apply flex items-center;
+}
+
+.header__logo img {
+    @apply w-[55px] h-[55px] object-cover rounded-xl mr-3;
+}
+
+.header__logo h1 {
+    @apply text-sm md:text-lg uppercase font-semibold lg:text-xl;
+}
+
+/* header__nav */
+
+.header__nav {
+    @apply flex items-center;
+}
+
+.header__nav .navItem {
+    @apply px-1 text-sm md:text-base font-medium cursor-pointer lg:px-3 lg:text-lg;
+}
+
+/* header__author */
+.header__author .authorItem {
+    @apply px-1 lg:px-2;
+}

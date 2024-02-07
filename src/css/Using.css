@@ -1,0 +1,42 @@
+.using {
+    @apply w-[90%] mx-auto py-[100px] grid grid-cols-6 lg:grid-cols-12 lg:gap-20;
+}
+
+.using .using__left {
+    @apply mb-7 col-span-6 lg:mb-0;
+}
+
+.using__left h2 {
+    @apply text-[28px] mb-4 md:text-[36px] md:mb-6 font-bold lg:mb-8 lg:text-[42px];
+}
+
+.using p {
+    @apply text-[14px] md:text-base mb-4 lg:text-xl;
+    color: #8b949e;
+}
+
+.using .using__right {
+    @apply h-[400px] col-span-6 lg:h-[600px] relative;
+}
+
+
+.using__right .usingImg {
+    @apply w-[50%] absolute rounded-2xl lg:w-[78%] lg:h-[58%];
+
+    &.ui1 {
+        @apply top-0 left-0;
+    }
+
+    &.ui2 {
+        @apply right-6 bottom-6 lg:bottom-20 lg:-right-6;
+    }
+}
+
+.using__strong {
+    @apply font-medium;
+    color: rgb(255, 170, 51);
+}
+
+.button.usingBtn {
+    @apply mt-8;
+}

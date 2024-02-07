@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+   @apply w-full px-2 text-sm md:px-4 md:text-base font-bold bg-white transition-all text-slate-900 h-[52px] rounded-2xl lg:px-7 lg:text-xl lg:w-auto;
+
+   &:hover {
+    transform: scale(.97);
+   }
+}
