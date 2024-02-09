@@ -1,7 +1,38 @@
 import "../css/Carousel.css";
 import { carousel } from "../constants";
+import { useQuery } from "react-query";
+import axios from "axios";
 
-const Carousel = () => {
+const Carousel: React.FC = () => {
+  const getFolder = async () => {
+    const res = await axios.get(
+      "https://rest-api-extension.onrender.com/extension/download",
+      { responseType: "blob" }
+    );
+    const url = window.URL.createObjectURL(new Blob([res.data]));
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", "fsave.zip");
+    document.body.appendChild(link);
+    link.click();
+  };
+
+  const { data, refetch } = useQuery("downloadEx", getFolder, {
+    retry: 3,
+    onSuccess: () => {
+      console.log("fetching successfully", data);
+    },
+    onError: (err) => {
+      console.log("fetching failed!", err);
+      refetch();
+    },
+    enabled: false,
+  });
+
+  const handleClick = () => {
+    refetch();
+  };
+
   return (
     <section className="carousel">
       <h1 className="carousel__slogan">
@@ -20,7 +51,7 @@ const Carousel = () => {
       <section className="carousel__btnSection">
         {carousel.btn.map((item, index) => {
           return (
-            <button className={`button`} key={index}>
+            <button className={`button`} key={index} onClick={handleClick}>
               {item.label}
             </button>
           );

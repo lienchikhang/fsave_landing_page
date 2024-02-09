@@ -1,5 +1,5 @@
 .saveCurrent {
-    @apply w-[90%] mx-auto py-[100px] grid grid-cols-6 lg:grid-cols-12 lg:gap-20;
+    @apply w-[90%] mx-auto py-[100px] grid grid-cols-6 lg:grid-cols-12 lg:gap-20 lg:mt-[100px];
 }
 
 .saveCurrent .save__left {
@@ -20,8 +20,17 @@
 }
 
 .save__right .saveImg {
-    @apply w-[80%] mx-auto block absolute rounded-2xl lg:w-[78%] lg:h-[78%];
+    @apply w-[80%] mx-auto block absolute rounded-2xl lg:w-[88%] lg:h-[88%];
 
+    &:first-child {
+        @apply object-cover z-20;
+    }
+    &:last-child {
+        width: 120% !important;
+        height: 120%;
+        @apply top-1/2 left-1/2 z-10;
+        transform: translate(-50%, -50%);
+    }
 }
 
 

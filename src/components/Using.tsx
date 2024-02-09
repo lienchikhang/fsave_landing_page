@@ -1,6 +1,6 @@
 import "../css/Using.css";
-import img1 from "../assets/img1.png";
-import img2 from "../assets/img2.png";
+import img1 from "../assets/multi1.png";
+import img2 from "../assets/multi2.png";
 import { using } from "../constants";
 
 const Using = () => {
@@ -24,6 +24,11 @@ const Using = () => {
       <div className="using__right">
         <img src={img1} alt="using-1" className="usingImg ui1" />
         <img src={img2} alt="using-2" className="usingImg ui2" />
+        <img
+          src="https://fullstack.edu.vn/landing/sass/assets/img/glow-new.png"
+          alt="bg"
+          className="usingImg ui3"
+        />
       </div>
     </section>
   );

@@ -7,6 +7,11 @@ const Open = () => {
     <section className="open">
       <div className="open__right">
         <img className="openImg" src={openImg} alt="open-1" />
+        <img
+          src="https://fullstack.edu.vn/landing/sass/assets/img/flashcard-light.png"
+          className="openImg"
+          alt="bg"
+        />
       </div>
       <div className="open__left">
         <h2>

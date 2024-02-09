@@ -35,7 +35,17 @@
 
 
 .open__right .openImg {
-    @apply w-[70%] absolute rounded-2xl lg:w-[78%] lg:h-[58%];
+    @apply w-[70%] absolute rounded-full lg:w-[500px] lg:h-[500px];
+
+    &:first-child {
+        @apply object-contain z-20;
+        box-shadow: 0 0 15px 3px #fff;
+    }
+
+    &:last-child {
+        @apply w-[120%] top-1/2 left-1/2 z-10;
+        transform: translate(-50%, -50%)
+    }
 
 }
 

@@ -21,14 +21,19 @@
 
 
 .using__right .usingImg {
-    @apply w-[50%] absolute rounded-2xl lg:w-[78%] lg:h-[58%];
+    @apply w-[50%] absolute rounded-2xl lg:w-[78%] lg:h-[78%];
 
     &.ui1 {
-        @apply top-0 left-0;
+        @apply top-0 left-0 z-20 object-cover;
     }
 
     &.ui2 {
-        @apply right-6 bottom-6 lg:bottom-20 lg:-right-6;
+        @apply right-6 bottom-6 object-cover lg:bottom-1 lg:-right-6 z-30;
+    }
+
+    &.ui3 {
+        @apply w-[150%] top-[61%] left-[25%] z-10;
+        transform: translate(-50%, -50%)
     }
 }
 

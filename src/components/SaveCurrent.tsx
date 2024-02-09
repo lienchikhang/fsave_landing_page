@@ -1,6 +1,6 @@
 import "../css/SaveCurrent.css";
 import { saveCurrent } from "../constants";
-import saveImg from "../assets/save1.png";
+import saveImg from "../assets/single.png";
 
 const SaveCurrent = () => {
   return (
@@ -26,6 +26,11 @@ const SaveCurrent = () => {
       </div>
       <div className="save__right">
         <img className="saveImg" src={saveImg} alt="save-1" />
+        <img
+          src="https://fullstack.edu.vn/landing/sass/assets/img/flashcard-light.png"
+          alt="bg"
+          className="saveImg"
+        />
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ import SaveCurrent from "./components/SaveCurrent";
 import Open from "./components/Open";
 import Delete from "./components/Delete";
 import Footer from "./components/Footer";
+import Conclusion from "./components/Conclusion";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <SaveCurrent />
         <Open />
         <Delete />
+        <Conclusion />
         <Footer />
       </Wrapper>
     </>
